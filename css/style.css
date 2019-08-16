@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+a { color: #000000; }
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover img { opacity: 0.7;}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+p {
+	margin-top: 0;
+	line-height: 1.6;
+}
+img { vertical-align: bottom; }
+a img { transition: opacity 0.2s linear; }
+#main h1 {
+	padding: 30px 30px 30px 20px;
+	font-size: 26px;
+	border-bottom: 10px double #FA3392;
+}
+#main h2 {
+	font-size: 22px;
+	border: 2px solid #FA3392;
+	padding: 11px 22px;
+	border-radius: 5px;
+}
+#main h3 {
+	font-size: 18px;
+	border-left: 3px solid #FA3392;
+	padding: 4px 9px 4px 14px;
+}
+/* header */
+header {
+	width: 980px;
+	margin: 0 auto;
+}
+header h1 {
+	float: left;
+	margin: 5px 0 10px;
+}
+header #header_contact {
+	float: right;
+	margin: 35px 0 0;
+}
+#global_navi {
+	width: 980px;
+	clear: both;
+	overflow: hidden;
+	margin: 16px auto;
+}
+#global_navi ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#global_navi ul li {
+	width: 193px;
+	float: left;
+	text-align: center;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 15px; 
+}
+#global_navi ul li a {
+	display: block;
+	padding: 16px;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #000000;
+	transition: background-color 0.2s linear;
+	border-radius: 15px; 	
+}
+#global_navi ul li:last-child {
+	border-right: 1px solid #000000;
+}
+/* ここのlast-child a ではなぜダメか考える */
+#global_navi ul li.current a {
+	color: #ffffff;
+	background-color: #FA3392;
+}
+#global_navi ul li a:hover {
+	color: #ffffff;
+	background-color: #004098;
+}
+
+/* wrapper */
+#wrapper{
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* footer */
+footer {
+	background-color: #F0F0F0;
+	text-align: center;
+}
+footer #footer_nav {
+	padding: 10px 0;
+}
+footer #footer_nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer #footer_nav li {
+	display: inline;
+	border-left: 1px solid #000000;
+	margin-left: 8px;
+	padding-left: 8px;
+	font-size: smaller;
+}
+footer #footer_nav li:last-child {
+	border-right: 1px solid #000000;
+	padding: 0 8px;
+}
+footer #footer_sns_images {
+	width: 400px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin: 5px auto;
+	overflow: hidden;
+}
+footer #footer_sns_images ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer #footer_sns_images ul li {
+	width: 100px;
+	float: left;
+	margin: 0 10px 20px 20px;
+}
+footer small {
+	display: block;
+	padding: 8px 0;
+}
+
+/* breadcrumb */
+#breadcrumb {font-size: smaller; }
+#breadcrumb ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#breadcrumb ol li {display: inline; }
+#breadcrumb ol li::after {
+	content: ">";
+	padding-left: 7px;
+}
+#breadcrumb ol li:last-child::after { content: none; }
+
+/* index.html */
+#main {
+	position: relative;
+}
+#main_visual {
+	width: 980px;
+	margin: 0 auto 25px;
+	border-radius: 5px;
+}
+
+/* point */
+#point {
+	width: 880px;
+	margin: 0 auto 20px;
+	padding-bottom: 20px;
+	background-color: #FA3392;
+	overflow: hidden;
+	border-radius: 5px;
+	height: 300px;
+}
+#point h2 {
+	color: #ffffff;
+	text-align: center;
+	border: none;
+}
+
+#point img {
+	display: block;
+	float: left;
+	border-radius: 5px;
+	position: absolute;
+	top: 75px;
+	left: 5px;
+}
+#point p {
+	color: #ffffff;
+	position: absolute;
+	top: 150px;
+	left: 450px;
+}
+/* point2 */
+#point2 {
+	width: 880px;
+	margin: 0 auto 20px;
+	padding-bottom: 20px;
+	background-color: #F0F0F0;
+	overflow: hidden;
+	border-radius: 5px;
+	height: 400px;
+}
+#point2 h2 {
+	text-align: center;
+	border: none;
+}
+#point2 h3 {
+	text-align: center;
+	border: none;
+}
+#point2 img {
+	display: block;
+	float: left;
+	border-radius: 5px;
+	position: absolute;
+	top: 470px;
+	left: 5px;
+
+}
+#point2 p {
+	position: absolute;
+	top: 560px;
+	left: 450px;
+}
+/* product */
+#product {
+	clear: both;
+	width: 980px;
+	background-color: #FA3392;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+#product h2 {
+	text-align: center;
+	color: #ffffff
+}
+#product img {
+	margin: 0 40px 20px 100px;
+	border-radius: 5px;
+}
+
+/* news */
+#news {
+	width: 980px;
+	clear: both;
+}
+#news dl { overflow: hidden; }
+#news dt {
+	width: 8em;
+	float: left;
+	margin-bottom: 10px;
+	clear: both;
+}
+#news dd {
+	margin-left: 8em;
+	margin-bottom: 10px;
+}
+
+/* About */
+#about {
+	width: 880px;
+	height: 2000px;
+	margin: 0 auto 20px;
+	padding-top: 20px; 
+	padding-bottom: 250px;
+	background-color: #F0F0F0;
+	overflow: hidden;
+	border-radius: 5px;
+	height: 400px;
+}
+#about h3 {
+	text-align: center;
+	border: none;
+}
+#about img {
+	display: block;
+	float: left;
+	border-radius: 5px;
+	position: absolute;
+	top: 450px;
+	left: 5px;
+}
+#about p {
+	width: 400px;
+	position: absolute;
+	top: 580px;
+	left: 520px;
+}
+
+/* Work */
+#course table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+#course th,
+#course td {
+  border: 1px solid #c7c7c7;
+  padding: 8px;
+}
+#course th {
+  background-color: #F0F0F0;
+  text-align: left;
+  width: 5em;
+}
+
+
+/* Picture */
+#gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#gallery ul li {
+  width: 300px;
+  margin: 0 25px 30px 7px;
+  padding: 10px 0;
+  border: solid 1px #ccc;
+  float: left;
+  text-align: center;
+  color: #b7a077;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+#gallery ul li:nth-child(3n) { 
+  margin-right: 0; 
+}
+
+
+/* contact */
+#entry dl {
+  background: #F0F0F0;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+#entry dl dt,
+#entry dl dd {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+#entry dl dt {
+  width: 13em;
+  float: left;
+  clear: both;
+  font-weight: bold;
+}
+#entry dl dd {
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  margin-left: 13em;
+}
+.must { color: #f00; }
+#entry #name {
+  width: 15em;
+  padding: 3px;
+}
+#entry #email {
+  width: 25em;
+  padding: 3px;
+}
+
+#entry #category2,
+#entry #category3,
+#entry #questionnaire2,
+#entry #questionnaire3 {
+  margin-left: 15px; 
+}
+
+#entry #detail {
+  width: 36em;
+  height: 15em;
+}
+
+#entry #submit_button_cover {
+  text-align: center; 
+}
+#entry #submit_button {
+  background-color: #FA3392;
+  border: 1px solid #000;
+  padding: 15px 100px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.1s linear;
+}
+#entry #submit_button:hover {
+  background: #004098;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
